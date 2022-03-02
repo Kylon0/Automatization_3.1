@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class SelenideTest {
 
     @Test
-    void shouldSubmitRequest(){
+    void shouldSubmitRequest() {
         open("http://localhost:9999");
         SelenideElement form = $("[id=root]");
         form.$("[data-test-id=name] input").setValue("Иванов Иван");
